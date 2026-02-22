@@ -204,17 +204,20 @@ p {
     justify-content: center;
     align-items: center;
     position: relative;
-    max-width: 500px;
-    height: 600px;
+    max-width: 600px;
+    height: auto;
+    min-height: 400px;
     animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
     opacity: 0;
 }
 
 .app-preview {
-    height: 600px;
-    width: auto;
     max-width: 100%;
+    max-height: 600px;
+    width: auto;
+    height: auto;
     object-fit: contain;
+    border-radius: 24px;
     animation: float 6s ease-in-out infinite;
     filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.5));
 }
@@ -375,11 +378,13 @@ footer {
     }
 
     .hero-visual {
-        height: 500px;
+        height: auto;
+        min-height: 300px;
+        max-width: 100%;
     }
 
     .app-preview {
-        height: 520px;
+        max-height: 400px;
     }
 }
 
